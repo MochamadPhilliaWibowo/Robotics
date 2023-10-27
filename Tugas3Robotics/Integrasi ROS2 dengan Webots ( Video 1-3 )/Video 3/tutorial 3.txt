@@ -1,1 +1,17 @@
-3
+Tutorial 3 : Use ROS2 Services to interact with robots in Webots
+
+- Using services with Terminal
+ 1. ros2 service list
+ 2. ros2 interface show webots_ros2_msgs/srv/SetDifferentialWheelSpeed
+ 3. Ros service call
+
+- Using services by making a node
+
+- Differences between ROS1 and ROS2 Services
+
+  ROS1                                                |  ROS2
+
+  1. jika ditulis dalam python perlu menginisiasi       1. inisialisasi setup.py apabila ingin membuat dan menggunakan layanan
+     untuk menjalankan layanan klien atau server
+
+  2. layanan sinkronus                                  2. Layanan Asinkronus
