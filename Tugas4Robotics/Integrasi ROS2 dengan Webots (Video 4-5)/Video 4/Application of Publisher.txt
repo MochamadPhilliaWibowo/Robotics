@@ -1,0 +1,8 @@
+Applications of publisher in ROS2
+
+    • To control the system real time
+    • To inform system about updaated environment
+    • Internal communication of the system
+    • to control the actuator position and velocity for their motion
+    • to perform action in sequence
+    • to handle emergency stopping situation
