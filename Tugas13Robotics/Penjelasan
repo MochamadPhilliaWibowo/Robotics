@@ -1,0 +1,16 @@
+Penjelasan:
+
+1. Model Sequential
+      Model dibangun menggunakan Sequential API, diawali dengan meratakan input gambar.
+
+2. Lapisan Dense 
+      Berisi lapisan-lapisan dense dengan jumlah unit dan fungsi aktivasi yang berbeda, yang diikuti oleh lapisan normalisasi batch dan dropout untuk mencegah overfitting.
+
+3. Callback Early Stopping 
+      Ditambahkan callback EarlyStopping untuk menghentikan pelatihan jika tidak terjadi peningkatan pada kerugian validasi setelah beberapa epoch (patience=5), dan merestorasi bobot terbaik.
+
+4. Kompile Model 
+      Model dikompilasi dengan optimizer Adam, fungsi loss categorical_crossentropy, dan metrik akurasi.
+
+5. Pelatihan Model 
+      Model dilatih dengan menggunakan data dari `train_generator`, dengan melakukan validasi menggunakan `validation_generator`. Callback Early Stopping juga disertakan untuk memonitor dan menghentikan pelatihan jika diperlukan.
